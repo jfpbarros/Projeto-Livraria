@@ -70,7 +70,6 @@ def login():
     )
 
 @app.route("/register", methods=['GET', 'POST'])
-@login_required
 def register():
     form = RegistrationForm()
     print("Formulário válido")
